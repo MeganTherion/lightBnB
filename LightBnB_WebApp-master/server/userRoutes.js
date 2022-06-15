@@ -26,7 +26,7 @@ module.exports = function(router, database) {
   const login =  function(email, password) {
     return database.getUserWithEmail(email)
     .then(user => {
-      if (bcrypt.compareSync(password, user.password)) {
+      if (bcrypt.compareSync(password, user[0].password)) {
         return user;
       }
       return null;
@@ -42,7 +42,7 @@ module.exports = function(router, database) {
           res.send({error: "error"});
           return;
         }
-        req.session.userId = user.id;
+        req.session.userId = user[0].id;
         res.send({user: {name: user.name, email: user.email, id: user.id}});
       })
       .catch(e => res.send(e));
