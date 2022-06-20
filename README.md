@@ -56,5 +56,6 @@ lightBnB is a simple airBnB clone. The purpose of this project is to design a da
   * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
 
 ## Screenshots
+!["Screenshot of ERD"](https://github.com/MeganTherion/lightBnB/blob/main/screenshots/lightbnb_ERD.png?raw=true)
 !["Screenshot of desktop view lightBnB 'add properties' form"](https://github.com/MeganTherion/lightBnB/blob/main/screenshots/Screenshot%202022-06-17%20at%204.17.40%20PM.png?raw=true)
 !["Screenshot of desktop view lightBnB 'my reservations' form"](https://github.com/MeganTherion/lightBnB/blob/main/screenshots/Screenshot%202022-06-17%20at%204.18.06%20PM.png?raw=true)
